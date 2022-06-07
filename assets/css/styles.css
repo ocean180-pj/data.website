@@ -274,14 +274,14 @@ a:hover {
 }
 #head .title a {
   text-decoration: none;
-  color: #333333;
+  color: #C3C3C3;
 }
 #head .tagline {
   display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 15px;
+  font-size: 0.95rem;
   line-height: 1.2em;
-  color: #7C7C7C;
+  color: #3C3C3C;
   margin: 5px 0 0;
 }
 #head .tagline b {
@@ -296,6 +296,7 @@ a:hover {
 .home #head .title {
   font-size: 49px;
   font-size: 3.0625rem;
+  color: #5E5E8E;
 }
 .home #head .tagline {
   font-size: 16px;
