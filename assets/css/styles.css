@@ -279,16 +279,18 @@ a:hover {
 #head .tagline {
   display: block;
   font-size: 15px;
-  font-size: 0.95rem;
-  line-height: 1.2em;
-  color: #3C3C3C;
+  font-size: 1.0rem;
+  line-height: 1.4em;
+  color: #5C5C9C;
   margin: 5px 0 0;
+
+  text-shadow: #FC0 1px 0 10px;
 }
 #head .tagline b {
   font-weight: normal;
 }
 #head .tagline a {
-  color: #5E5E5E;
+  color: #5E5E6E;
 }
 .home #head {
   padding: 90px 0;
