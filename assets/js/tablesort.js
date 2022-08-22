@@ -19,7 +19,7 @@ function convertArray(data) {
 
  let insertElement = '';
  
- let theader = '<thead><th>◆通し番号</th>';
+ let theader = '<thead><th>◆NID</th>';
  header.forEach((childElementh) => {
    theader += `<th>◆${childElementh}</th>`
   });
