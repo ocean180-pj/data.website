@@ -229,7 +229,7 @@ a:hover {
 .lead {
   font-weight: 300;
   font-size: 18px;/* IE8以下とAndroid4.3以下用フォールバック */
-  font-size: calc(1.3rem + ((1vw - 0.64rem) * 0.2))/*calc(1.3rem + ((1vw - 0.64rem) * 0.6)); *//* 24px~36pxで可変*/
+  font-size: calc(1.3rem + ((1vw - 0.64rem) * 0.1))/*calc(1.3rem + ((1vw - 0.64rem) * 0.6)); *//* 24px~36pxで可変*/
 }
 .text-msg {
   line-height: 1.7em;
