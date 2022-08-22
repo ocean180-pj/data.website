@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Data searcher</title>
+</head>
+<body>
+<input type="text" id="search"> <input type="button" value="絞り込む" id="button"> <input type="button" value="すべて表示" id="button2">
+
+<table id="output_csv"></table>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="assets/js/tablesort.js"></script>
+
+<style>
+#output_csv {
+	border-collapse:collapse;
+}
+#output_csv td {
+	border:1px solid lightgray;
+}
+#output_csv th {
+	cursor:pointer;
+	background-color:lightgray;
+}
+</style>
+</body>
+</html>
+
