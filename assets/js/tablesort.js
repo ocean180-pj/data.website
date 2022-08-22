@@ -19,9 +19,9 @@ function convertArray(data) {
 
  let insertElement = '';
  
- let theader = '<thead><th>◆NID</th>';
+ let theader = '<thead><th id="headers">◆NID</th>';
  header.forEach((childElementh) => {
-   theader += `<th>◆${childElementh}</th>`
+   theader += `<th id="headers">◆${childElementh}</th>`
   });
  theader += '</thead>';
  insertElement += theader
@@ -48,7 +48,7 @@ $(function(){
 	$('#button').bind("click",function(){
 		var re = new RegExp($('#search').val());
 		$('#output_csv tbody tr').each(function(){
-			var txt = $(this).find("td:eq(0)").html();
+			var txt = $(this).html();
 			if(txt.match(re) != null){
 				$(this).show();
 			}else{
@@ -58,18 +58,24 @@ $(function(){
 	});
 
 	$('#button2').bind("click",function(){
+		$('#output_csv tbody tr').each(function(){
+			$(this).show();
+		})
 		$('#search').val('');
-		$('#result tr').show();
 	});
 });
 
-
-window.addEventListener('load', function () {
 	let column_no = 0; //今回クリックされた列番号
 	let column_no_prev = 0; //前回クリックされた列番号
-	document.querySelectorAll('#output_csv th').forEach(elm => {
+
+window.addEventListener('click', function () {
+
+	document.querySelectorAll('#headers').forEach(elm => {
 		elm.onclick = function () {
+		
 			column_no = this.cellIndex; //クリックされた列番号
+							console.log(column_no);
+				console.log(column_no_prev);
 			let table = this.parentNode.parentNode.parentNode;
 			let sortType = 0; //0:数値 1:文字
 			let sortArray = new Array; //クリックした列のデータを全て格納する配列
@@ -84,6 +90,9 @@ window.addEventListener('load', function () {
 					sortType = 1; //値が数値変換できなかった場合は文字列ソート
 				}
 			}
+			
+			console.log(sortArray);
+			
 			if (sortType == 0) { //数値ソート
 				if (column_no_prev == column_no) { //同じ列が2回クリックされた場合は降順ソート
 					sortArray.sort(compareNumberDesc);

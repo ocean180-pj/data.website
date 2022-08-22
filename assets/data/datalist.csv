@@ -1,12 +1,15 @@
-#データ名,ファイル名,説明,更新日,解像度,キーワード,URL#
-サンプル,データ１,1情報１,海洋,,,https://thinknature-japan.com/
-サンプリ,データ１,3情報a,コメント,,,https://thinknature-japan.com/
-サンプレ,データ１,4情報１,コメント,,,https://thinknature-japan.com/
-サンプロ,データ１,5情報１,コメント,,,https://thinknature-japan.com/
-サンプラ,データ１,6情報１,コメント,,,https://thinknature-japan.com/
-サンセット,データ１,7情報１,コメント,,,https://thinknature-japan.com/
-サンデー,データ１,1情報１,コメント,,,https://thinknature-japan.com/
-マンデー,データ１,情報１,コメント,,,https://thinknature-japan.com/
-チューズデー,データ１,情報2,コメント,,,https://thinknature-japan.com/
-太郎さん,データ１,情報3,コメント,,,https://thinknature-japan.com/
-花子サン,データ１,情報4,コメント,,,https://thinknature-japan.com/
+﻿#データ名,ファイル名,説明,更新日,解像度,検索キュー,URL#
+日本両生類1km,amphibian_grid1km.csv,日本の両生類の分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;両生類;amphibian;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本被子植物1km,angiosperms1_grid1km.csv,日本の被子植物の分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;被子植物;angiosperm;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本被子植物1km,angiosperms2_grid1km.csv,日本の被子植物の分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;被子植物;angiosperm;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本被子植物1km,angiosperms3_grid1km.csv,日本の被子植物の分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;被子植物;angiosperm;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本鳥類1km,bird_grid1km.csv,日本の鳥類の分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;鳥類;bird;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本チョウ1km,butterfly_grid1km.csv,日本のチョウの分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;チョウ;butterfly;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本セミ1km,cicada_grid1km.csv,日本のセミの分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;セミ;cicada;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本トンボ1km,dragonfly_grid1km.csv,日本のトンボの分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;トンボ;dragonfly;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本シダ1km,fern_grid1km.csv,日本のシダ植物の分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;シダ植物;fern;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本淡水魚1km,freshwater_fish_grid1km.csv,日本の淡水魚類の分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;魚類;淡水魚類;freshwater fish;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;淡水域,https://thinknature-japan.com/
+日本裸子植物1km,gymnosperm_grid1km.csv,日本の裸子植物の分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;裸子植物;gymnosperm;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本哺乳類（肉食）1km,mammal_carnivora_grid1km.csv,日本の肉食哺乳類の分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;肉食哺乳類;carnivora;mammal;amphibian;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本哺乳類（肉食以外）1km,mammal_except_carnivora_grid1km.csv,日本の非肉食哺乳類の分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;非肉食哺乳類;mammal;amphibian;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
+日本爬虫類1km,reptile_grid1km.csv,日本の爬虫類類の分布推定マップ（二値化）。在不在生データの年代別情報付き,2022/08/20,3次メッシュ,種分布データ;日本;爬虫類;reptile;1km;3次メッシュ;在不在;推定;MaxEnt;時系列;陸域,https://thinknature-japan.com/
