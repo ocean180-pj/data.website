@@ -8,6 +8,48 @@
 <p>キーワード検索<br>
 <input type="text" id="search"> <input type="button" value="絞り込む" id="button"> <input type="button" value="すべて表示" id="button2">
 </p>
+<p>フィルタリング
+<fieldset>
+  <legend>検索したいものにチェックを入れてください。<input type="button" value="絞り込む" id="button3"> <input type="button" value="すべて選択" id="button4"> <input type="button" value="すべて解除" id="button5"></legend>
+  <div>
+  <b>データの種類</b><br>
+    |<input type="checkbox" id="dist" name="datatype" value="種分布"  checked>
+    <label for="coding">種分布</label>
+    |<input type="checkbox" id="abun" name="datatype" value="個体数"  checked>
+    <label for="coding">個体数</label>
+    |<input type="checkbox" id="envi" name="datatype" value="環境"  checked>
+    <label for="coding">環境</label>
+    |<input type="checkbox" id="func" name="datatype" value="機能特性"  checked>
+    <label for="coding">機能特性</label>
+    |<input type="checkbox" id="phyl" name="datatype" value="系統樹"  checked>
+    <label for="coding">系統樹</label>
+  </div>
+  <div>
+  <b>生息区分</b><br>
+    |<input type="checkbox" id="terr" name="realm" value="陸域"  checked>
+    <label for="coding">陸域</label>
+    |<input type="checkbox" id="mari" name="realm" value="海域"  checked>
+    <label for="coding">海域</label>
+    |<input type="checkbox" id="fres" name="realm" value="淡水域"  checked>
+    <label for="coding">淡水域</label>
+  </div>
+  <div>
+  <b>解像度</b><br>
+    |<input type="checkbox" id="mes3" name="resolution" value="3次メッシュ"  checked>
+    <label for="coding">3次メッシュ (1km) </label>
+    |<input type="checkbox" id="mes2" name="resolution" value="2次メッシュ"  checked>
+    <label for="coding">2次メッシュ (10km) </label>
+  </div>
+  <div>
+  <b>データ作成方法</b><br>
+    |<input type="checkbox" id="occu" name="generation" value="観測値"  checked>
+    <label for="coding">観測値</label>
+    |<input type="checkbox" id="pred" name="generation" value="予測値"  checked>
+    <label for="coding">予測値</label>
+  </div>
+</fieldset>
+
+</p>
 <table id="output_csv"></table>
 
 

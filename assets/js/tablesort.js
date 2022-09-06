@@ -49,6 +49,7 @@ $(function(){
 		var re = new RegExp($('#search').val());
 		$('#output_csv tbody tr').each(function(){
 			var txt = $(this).html();
+			console.log(txt.match(re));
 			if(txt.match(re) != null){
 				$(this).show();
 			}else{
@@ -64,6 +65,103 @@ $(function(){
 		$('#search').val('');
 	});
 });
+
+$(function(){
+	$('#button3').bind("click",function(){
+		$('#output_csv tbody tr').each(function(){
+			$(this).hide();
+		});	
+		$('#output_csv tbody tr').each(function(){
+			var txt = $(this).html();
+			var obj = $(this);
+			$("[name=datatype]").each(function(){
+			
+				if ($(this).prop("checked")==true){
+					var que = $(this).prop("value");
+					if(txt.match(que) != null){
+						obj.show();
+					}				
+				}
+			});
+			$("[name=realm]").each(function(){
+			
+				if ($(this).prop("checked")==true){
+					var que = $(this).prop("value");
+					if(txt.match(que) != null){
+						obj.show();
+					}				
+				}
+			});			
+			$("[name=resolution]").each(function(){
+			
+				if ($(this).prop("checked")==true){
+					var que = $(this).prop("value");
+					if(txt.match(que) != null){
+						obj.show();
+					}				
+				}
+			});			
+			$("[name=generation]").each(function(){
+			
+				if ($(this).prop("checked")==true){
+					var que = $(this).prop("value");
+					if(txt.match(que) != null){
+						obj.show();
+					}				
+				}
+			});			
+		});
+
+	});
+
+	$('#button4').bind("click",function(){
+		const filter_type = document.getElementsByName('datatype');
+	    for(let i = 0; i < filter_type.length; i++){
+	      filter_type[i].checked = true;
+	    }		
+		const filter_realm = document.getElementsByName('realm');
+	    for(let i = 0; i < filter_realm.length; i++){
+	      filter_realm[i].checked = true;
+	    }	
+		const filter_resolution = document.getElementsByName('resolution');
+	    for(let i = 0; i < filter_resolution.length; i++){
+	      filter_resolution[i].checked = true;
+	    }	
+		const filter_generation = document.getElementsByName('generation');
+	    for(let i = 0; i < filter_generation.length; i++){
+	      filter_generation[i].checked = true;
+	    }	
+	    
+		$('#output_csv tbody tr').each(function(){
+			$(this).show();
+		})		
+	});
+
+	$('#button5').bind("click",function(){
+		const filter_type = document.getElementsByName('datatype');
+	    for(let i = 0; i < filter_type.length; i++){
+	      filter_type[i].checked = false;
+	    }		
+		const filter_realm = document.getElementsByName('realm');
+	    for(let i = 0; i < filter_realm.length; i++){
+	      filter_realm[i].checked = false;
+	    }	
+		const filter_resolution = document.getElementsByName('resolution');
+	    for(let i = 0; i < filter_resolution.length; i++){
+	      filter_resolution[i].checked = false;
+	    }
+		const filter_generation = document.getElementsByName('generation');
+	    for(let i = 0; i < filter_generation.length; i++){
+	      filter_generation[i].checked = false;
+	    }		    
+	    
+		$('#output_csv tbody tr').each(function(){
+			$(this).hide();
+		})		
+	});
+
+});
+
 
 	let column_no = 0; //今回クリックされた列番号
 	let column_no_prev = 0; //前回クリックされた列番号
