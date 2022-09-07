@@ -75,39 +75,57 @@ $(function(){
 			var txt = $(this).html();
 			var obj = $(this);
 			$("[name=datatype]").each(function(){
-			
+				var que = $(this).prop("value");
 				if ($(this).prop("checked")==true){
-					var que = $(this).prop("value");
 					if(txt.match(que) != null){
 						obj.show();
-					}				
+					}
+				}else{
+					if(txt.match(que) != null){
+						obj.hide();
+					}
 				}
 			});
 			$("[name=realm]").each(function(){
-			
+				var que = $(this).prop("value");
 				if ($(this).prop("checked")==true){
-					var que = $(this).prop("value");
 					if(txt.match(que) != null){
-						obj.show();
-					}				
+						if(obj.is(":visible")){
+							obj.show();
+						}
+					}
+				}else{
+					if(txt.match(que) != null){
+						obj.hide();
+					}
 				}
 			});			
 			$("[name=resolution]").each(function(){
-			
+				var que = $(this).prop("value");
 				if ($(this).prop("checked")==true){
-					var que = $(this).prop("value");
 					if(txt.match(que) != null){
-						obj.show();
-					}				
+						if(obj.is(":visible")){
+							obj.show();
+						}
+					}
+				}else{
+					if(txt.match(que) != null){
+						obj.hide();
+					}
 				}
 			});			
 			$("[name=generation]").each(function(){
-			
+				var que = $(this).prop("value");
 				if ($(this).prop("checked")==true){
-					var que = $(this).prop("value");
 					if(txt.match(que) != null){
-						obj.show();
-					}				
+						if(obj.is(":visible")){
+							obj.show();
+						}
+					}
+				}else{
+					if(txt.match(que) != null){
+						obj.hide();
+					}
 				}
 			});			
 		});
