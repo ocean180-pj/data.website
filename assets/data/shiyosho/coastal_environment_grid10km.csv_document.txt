@@ -1,0 +1,34 @@
+##################################################################
+coastal_environment_grid10km.csv仕様書
+##################################################################
+このcsvファイルには、2次メッシュスケールでの海域の環境条件を統合したファイルである。
+
+#################################
+各列は以下をあらわす
+
+mesh2 … 2次メッシュID
+x … 2次メッシュの中心経度
+y … 2次メッシュの中心緯度
+coast_dist … 海岸線までの距離（km)（国土数値情報 海岸線データ）
+depth_min … 最も浅い水深 (m )（日本海洋データセンター J-EGG500（日本周辺500mメッシュ海底地形データ））
+depth_max … 最も深い水深 (m )（日本海洋データセンター J-EGG500（日本周辺500mメッシュ海底地形データ））
+depth_mean … 平均水深 (m )（日本海洋データセンター J-EGG500（日本周辺500mメッシュ海底地形データ））
+depth_sd … 水深の標準偏差（日本海洋データセンター J-EGG500（日本周辺500mメッシュ海底地形データ））
+annual_sst … 年平均表層海水温 (℃)（GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis）
+cold_sst … 最寒月平均表層海水温 (℃)（GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis）
+warm_sst … 最暖月平均表層海水温 (℃)（GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis）
+hist_warm_sst … 歴史的最高表層海水温(℃)（GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis）
+hist_cold_sst … 歴史的最低表層海水温(℃)（GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis）
+salinity_annual … 表層の年平均塩分量 （‰）（World Ocean Atlas 2018）
+river_dist … 最寄の河口までの距離 (m )（国土数値情報 河川データ）
+river_area … 最寄河川の集水面積 (m2)（国土数値情報 流域メッシュデータ）
+coral_area … サンゴ礁面積 (m2 )（自然環境保全基礎調査サンゴ礁調査）
+seaweed_area … 藻場面積 (m2 )（自然環境保全基礎調査藻場調査）
+tideland_area … 干潟面積 (m2)（自然環境保全基礎調査干潟調査）
+coast_length … 海岸線長 (m )（自然環境保全基礎調査海岸調査）
+beach_length … 海浜長 (m )（自然環境保全基礎調査海岸調査）
+cliff_length … 海崖長 (m )（自然環境保全基礎調査海岸調査）
+artificial_length … 人工海岸長 (m )（自然環境保全基礎調査海岸調査）
+fetch … 開放度（国土数値情報 海岸線データより算出）
+land_area … 陸地面積 (m2)（国土数値情報 土地利用細分メッシュデータ）
+sea_area … 海域面積 (m2)（国土数値情報 土地利用細分メッシュデータ）
